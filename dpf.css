@@ -1,0 +1,95 @@
+@import "reset aviso.css";
+@import "aviso.css";
+body{
+background:#000DDD;
+margin:1%;
+border:0%;
+}
+header{
+background:#FFFFFF;
+padding:2em;
+font-size:20px, color:#000000;
+text-align:center;
+position:middle;
+display:middle;
+margin-left:auto;
+margin-right:auto;
+display:grid;
+grid-template-columns:auto;
+justify-self:center;
+}
+article{
+background:#000000;
+padding:1em;
+font-size:16px;
+color:#FFFFFF;
+text-align:center;
+position:middle;
+display:middle;
+margin-left:auto;
+margin-right:auto;
+display:grid;
+grid-template-columns:auto;
+justify-self:center;
+}
+is-superselector("div", "div.aviso")
+Result:true
+is-superselector("div.aviso", "div")
+Result:false
+is-superselector("div", "div")
+Result:true
+}
+div{
+background:#FFFFFF;
+position:middle;
+display:inline-block;
+margin:5%;
+border:0%;
+padding:60%;
+}
+div.aviso figure{
+background:#FFFFFF;
+display:inline-block;
+position:middle;
+display:middle;
+margin-left:auto;
+margin-right:auto;
+border:0px;
+padding:relative;
+height:400px;
+max-width:600px;
+}
+div.aviso img{
+display:block;
+border:0px;
+max-width:600px;
+height:400px;
+margin-left:auto;
+margin-right:auto;
+}
+div.aviso figcaption{
+background:#000DDD;
+position:center;
+display:inline;
+padding:auto, color:#000DDD;
+margin-left:1px;
+margin-right:1px;
+border:1px;
+width:600px;
+height:14px;
+text-align:center;
+font-size:16px;
+color:#FFFFFF;
+justify-self:center;
+}
+div.aviso {
+  display:grid;
+  grid-template-columns:auto;
+  justify-self:center;
+}
+div.aviso > div.aviso {
+  position:center;
+  text-align:center;
+  padding:auto;
+  font-size:auto, bold;
+}
