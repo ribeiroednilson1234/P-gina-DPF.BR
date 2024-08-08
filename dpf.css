@@ -1,0 +1,89 @@
+@import "reset span.css";
+@import "span.css";
+body{
+background:#000ddd;
+margin:1%;
+border:0%;
+}
+header{
+background:#ffffff;
+padding:2em;
+font-size:20px, color:#000000;
+position:middle;
+display:middle;
+margin-left:auto;
+margin-right:auto;
+display:grid;
+grid-template-columns:auto;
+justify-self:center;
+}
+article{
+background:#000000;
+padding:auto;
+font-size:18px, color:#ffffff;
+position:middle;
+display:middle;
+margin-left:auto;
+margin-right:auto;
+display:grid;
+grid-template-columns:auto;
+justify-self:center;
+}
+is-superselector("div", "div.span")
+Result:true
+is-superselector("div.span", "div")
+Result:false
+is-superselector("div", "div")
+Result:true
+span{
+background:#ffffff;
+position:middle;
+display:inline-block;
+margin:5%;
+border:0%;
+padding:60%;
+font:#000000;
+}
+div.span figure{
+background:#F0FFFF;
+display:inline-block;
+position:middle;
+display:middle;
+margin-left:auto;
+margin-right:auto;
+border:0px;
+padding:relative;
+height:400px;
+max-width:600px;
+}
+div.span img{
+display:block;
+border:0px;
+max-width:600px;
+height:400px;
+margin-left:auto;
+margin-right:auto;
+}
+div.span figcaption{
+position:middle;
+display:inline;
+padding:auto;
+margin-left:1px;
+margin-right:1px;
+border:0px;
+width:600px;
+height:30px;
+font-size:20px, bold;
+font:#000000;
+}
+.span {
+  display:grid;
+  grid-template-columns:auto;
+  justify-self:center;
+}
+.span > div.span {
+  position:center;
+  text-align:center;
+  padding:auto;
+  font-size:auto, bold;
+}
