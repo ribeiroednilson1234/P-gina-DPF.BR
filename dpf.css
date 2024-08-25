@@ -1,5 +1,5 @@
-@import "reset aviso.css";
-@import "aviso.css";
+@import "reset dpf.css";
+@import "dpf.css";
 body{
 background:#000DDD;
 margin:1%;
@@ -32,9 +32,9 @@ display:grid;
 grid-template-columns:auto;
 justify-self:center;
 }
-is-superselector("div", "div.aviso")
+is-superselector("div", "div.dpf")
 Result:true
-is-superselector("div.aviso", "div")
+is-superselector("div.dpf", "div")
 Result:false
 is-superselector("div", "div")
 Result:true
